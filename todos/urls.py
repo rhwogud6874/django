@@ -7,4 +7,5 @@ urlpatterns = [
     path('create/', views.create),
     # Read
     path('', views.index),
+    path('<int:todo_id>/', views.detail),
 ]
