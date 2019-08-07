@@ -19,6 +19,13 @@
           <a href="/todos/{{todo.id}}/" class="btn btn-primary">글보기</a>
         </td>
       </tr>
+    {% empty %}
+      <tr>
+        <th>#</th>
+        <td>할일이 비었습니다.</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
